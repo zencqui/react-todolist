@@ -1,0 +1,67 @@
+body {
+  background-color: #c7caff;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  font-weight: 700;
+
+  .App {
+    background-color: #faedcb;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    input {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px 0 0 25px;
+    }
+
+    button {
+      border: none;
+      padding: 10px 20px;
+      color: #ffffff;
+      font-family: "Comic Neue", cursive;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .addButton {
+      border-radius: 0 25px 25px 0;
+      background-color: green;
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+
+      .listContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        min-width: 250px;
+
+        .checkList {
+          display: flex;
+          align-items: center;
+
+          li {
+            margin: 10px;
+          }
+        }
+
+        .deleteButton {
+          background-color: crimson;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

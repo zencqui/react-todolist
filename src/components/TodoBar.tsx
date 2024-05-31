@@ -33,7 +33,9 @@ const TodoBar = () => {
         onChange={handleOnChangeInput}
         value={todoInput}
       ></input>
-      <button type="submit">Add</button>
+      <button className="addButton" type="submit">
+        Add
+      </button>
     </form>
   );
 };

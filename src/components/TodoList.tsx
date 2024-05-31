@@ -26,14 +26,17 @@ const TodoList = () => {
   return (
     <ul>
       {todoList.map((todo) => (
-        <div key={todo.id}>
-          <li key={todo.id}>{todo.label}</li>
-          <input
-            type="checkbox"
-            onChange={() => handleCheckboxOnChange(todo.id)}
-            checked={todo.isCompleted}
-          ></input>
+        <div key={todo.id} className="listContainer">
+          <div className="checkList">
+            <input
+              type="checkbox"
+              onChange={() => handleCheckboxOnChange(todo.id)}
+              checked={todo.isCompleted}
+            ></input>
+            <li key={todo.id}>{todo.label}</li>
+          </div>
           <button
+            className="deleteButton"
             type="button"
             onClick={() => {
               handleDeleteTodo(todo.id);

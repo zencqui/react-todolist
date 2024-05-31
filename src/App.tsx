@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import React, { useEffect, useRef, useState } from "react";
 import { useRecoilState } from "recoil";
 import { todoListState } from "./states/todoStates";
